@@ -5,7 +5,7 @@ html {
 body {
     font-family: 'Roboto Mono', monospace;
     color: #2B2A2A;
-    background-image: url(file:///Users/chermaynehiew/Site/IMG_4420.jpg);
+    background-image: url(/resources/landing-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
