@@ -1,13 +1,20 @@
-html {
-    min-height: 100%;
-}
-
 body {
-    font-family: 'Roboto Mono', monospace;
-    color: #2B2A2A;
-    background-image: url(/resources/landing-bg.jpg);
+    background-image: url(file:///Users/chermaynehiew/Site/landing-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 100%;
+}
+
+/* NEW NAV */
+#header-container {
+    background-color: transparent !important;
+}
+
+header {
+    background-color: transparent !important;
+}
+
+#header-container ul {
+    background-color: transparent !important;
 }
