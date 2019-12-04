@@ -69,7 +69,7 @@ h1 {
     cursor: pointer;
 }
 
-ul {
+header ul {
     position: fixed;
     width: inherit;
     height: auto;
