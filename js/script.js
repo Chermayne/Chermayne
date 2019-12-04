@@ -1,49 +1,64 @@
 var dropdown = document.getElementById("dropdown");
-var toggle = document.getElementById("nav-toggle");
+var toggleIcon = document.getElementById("nav-toggle");
 var menu = document.getElementById("menu-expanded");
-var current = document.querySelector("h1");
-var active = document.getElementById("active");
-var logo = document.getElementById("logo");
+var h1 = document.querySelectorAll("h1")
 
-menu.style.display = "none";
-current.style.display = "block";
-logo.style.display = "none";
 
-dropdown.addEventListener("click", function(){
-    if (current.style.display == "block") {
-        current.style.display = "none";
+let opened = null;
+let changed = null;
+const toggleVisibility = e => e.classList.toggle('show');
+const toggleHeader = e => {
+    for(let i = 0; i < e.length; i++){
+        e[i].classList.toggle('show-header');
+        }
+};
+
+const handleDropdown = e => {
+    const clickedItem = menu;
+
+    toggleVisibility(clickedItem);
+
+    if (!opened) {
+        opened = clickedItem;
+    } else if (opened == clickedItem) {
+        opened = null;
     } else {
-        current.style.display = "block";
+        toggleVisibility(opened);
+        opened = clickedItem;
     }
 
-    if (logo.style.display == "none") {
-        logo.style.display = "block";
+    const clickedHeader = h1;
+
+    toggleHeader(clickedHeader);
+
+    if (!changed) {
+        changed = clickedHeader;
+    } else if (changed == clickedHeader) {
+        changed = null;
     } else {
-        logo.style.display = "none";
+        toggleHeader(changed);
+        changed = clickedHeader;
+    }
+    
+    if (toggleIcon.style.transform == "") {
+        toggleIcon.style.transform = "rotate(90deg)";
+        toggleIcon.style.transition = "0.3s";
+    } else {
+        toggleIcon.style.transform = "";
+    }
+};
+
+const handleClick = e => {
+    if (e.target.className.includes('dropDown')) {
+        handleDropdown(e.target);
+    } else if (opened || changed) {
+        toggleVisibility(opened)
+        opened = null
+        toggleHeader(changed)
+        changed = null
+        toggleIcon.style.transform = "";
     }
 
-    if (toggle.style.transform == "") {
-        toggle.style.transform = "rotate(90deg)";
-        toggle.style.transition = "0.3s";
-    } else {
-        toggle.style.transform = "";
-    }
+}
 
-    if (menu.style.display == "none") {
-        menu.style.display = "block";
-//     } else {
-//         menu.style.display = "none";
-//     }
-});
-
-document.addEventListener("click", function(){
-    current.style.display = "block"
-    logo.style.display = "none";
-    toggle.style.transform = ""
-    menu.style.display = "none";
-});
-
-dropdown.addEventListener('click', function(e){
-    e.preventDefault();
-    e.stopPropagation();
-});
+document.addEventListener("click", handleClick);
