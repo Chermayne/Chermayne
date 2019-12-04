@@ -49,6 +49,7 @@ h1 {
     font-weight: 400;
     letter-spacing: 3px;
     margin: 0;
+    display: none;
 }
 
 #header-logo-container {
@@ -65,9 +66,10 @@ h1 {
 
 #nav-toggle {
     font-size: 2.5em;
+    cursor: pointer;
 }
 
-#menu-expanded {
+ul {
     position: fixed;
     width: inherit;
     height: auto;
@@ -82,17 +84,22 @@ h1 {
     border-bottom: 3px solid #2B2A2A;
     background-color: #ebeae9;
     list-style: none;
+    display: none;
 }
 
-#menu-expanded li:first-child {
+#current {
+    display: block;
+}
+
+ul li:first-child {
     padding-top: 10px;
 }
 
-#menu-expanded li:last-child {
+ul li:last-child {
     padding-bottom: 10px;
 }
 
-#menu-expanded a {
+ul a {
     color: #2B2A2A;
     padding-left: 15px;
     padding-top: 5px;
@@ -101,7 +108,7 @@ h1 {
     display: block;
 }
 
-#menu-expanded a:hover {
+ul a:hover {
     background-color: #2B2A2A;
     color: #ebeae9;
 }
@@ -114,6 +121,13 @@ h1 {
     font-size: inherit; 
 }
 
+.show {
+    display: block;
+}
+
+.show-header {
+    display: block;
+}
 
 /* MAIN */
 main {
@@ -332,7 +346,7 @@ main {
         padding: 3px 4px 2px 4px;
     }
 
-    #menu-expanded {
+    ul {
         padding: 0;
         margin: 50px 0 0 -2px;
         font-size: 1.8em;
