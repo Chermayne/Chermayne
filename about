@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,400,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/351e524c02.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Chermayne Hiew</title>
+</head>
+<body>
+<div class="container">
+    <div id="dropdown">
+        <div id="header-container">
+            <header>
+                    <div id="header-logo-container">
+                        <h1 id="current">About</h1>
+                        <h1 id="logo">Chermayne Hiew</h1>
+                    </div>
+                
+                    <div id="nav-toggle-wrapper">
+                        <div id="nav-toggle">
+                                <i class="fas fa-bars"></i>
+                        </div>
+                    </div>
+
+                    <ul id="menu-expanded">
+                        <li class="menu-item active"><a href="#">About</a></li>
+                        <li class="menu-item"><a href="#">Experiences</a></li>
+                        <li class="menu-item"><a href="#">Education</a></li>
+                        <li class="menu-item"><a href="#">Contact</a></li>
+                    </ul>
+            </header>
+        </div>
+    </div>
+   
+    <main>
+        <div class="profile-content-wrapper">
+                <img class="profile-image" src="file:///Users/chermaynehiew/Site/IMG_5242.jpeg" alt="Profile picture me standing next to a big plant"> 
+            <div class="profile-content">
+                <p><span>Hello!</span> I’m Chermayne or 丘心俐 (chiew xing li) in Chinese. I'm new to this journey of web development and design. </p>
+                <p>I grew up in <a href="https://en.wikipedia.org/wiki/Malaysia" target="_blank">Malaysia</a> but have been living most of my adult life in the UK. I have a keen interest in understanding and learning from the interactions between humans, tech, and nature, and therefore ensure that's centered in my work and personal life.</p>
+                <p>It has taught me that everything is interconnected and that there is so much to learn from observation and experience.</p>
+                <p>In my free time I look after my vegetable patch, go for walks, and enjoy making strange and silly creatures in ceramics class.</p>
+                <p>This site is the first project I built from scratch, so please leave feedback if you spot something that doesn't work as it should and suggesetions are very much welcomed as I'd like to continue growing and improving. Design has been heavily inspired by <a href="http://juerglehni.com/" target="_blank">http://juerglehni.com/</a> and <a href="https://harvardfilmarchive.org/" target="_blank">https://harvardfilmarchive.org/</a>.</p> 
+            </div>
+
+        </div>
+    </main>
+       
+    <footer>
+        <ul class="footer-container">
+            <li class="footer-item">
+                <a href="mailto:ch1829@my.bristol.ac.uk" target="_blank"><i class="fas fa-envelope"></i></a>
+            </li>
+            <li class="footer-item">
+                <a href="https://github.com/Chermayne" target="_blank"><i class="fab fa-github"></i></a>
+            </li>
+            <li class="footer-item">
+                <a href="https://www.linkedin.com/in/chermayne-hiew" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li class="footer-item">
+                <a href="https://www.instagram.com/chrmyn__/" target="_blank"><i class="fab fa-instagram"></i>
+            </li>
+        </ul>
+    </footer>
+</div>
+    
+
+<script src="/js/script.js"></script>
+</body>
+</html> 
