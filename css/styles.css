@@ -325,7 +325,7 @@ main {
     }
 }
 
-@media (max-width: 576px){
+@media (min-width: 480px){
     .container {
         width: 450px;
     }
