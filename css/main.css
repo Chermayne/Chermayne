@@ -7,14 +7,33 @@ body {
 }
 
 /* NEW NAV */
-#header-container {
-    background-color: transparent !important;
-}
-
 header {
     background-color: transparent !important;
 }
 
-#header-container ul {
+#navbar-container {
     background-color: transparent !important;
+}
+
+
+.header-logo-container {
+    background-color: transparent !important;
+}
+
+#nav-toggle-container {
+    background-color: transparent !important;
+}
+
+header ul {
+    background-color: transparent !important;
+}
+
+@media (hover: hover) { 
+    ul a:hover {
+        color: #b0cdd9 !important;
+    }
+
+    .fa-bars:hover {
+        color: #b0cdd9 !important;
+    }
 }
