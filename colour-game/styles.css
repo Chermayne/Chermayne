@@ -78,7 +78,15 @@ button:hover {
 
 /* MEDIA QUERIES */
 @media (max-width: 576px) {
+    h1 {
+        font-size: 1.3em;
+    }
+    
     #colour-display {
         font-size: 150%;
+    }
+
+    #stripe {
+        font-size: 0.7em;
     }
 }
