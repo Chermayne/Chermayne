@@ -219,7 +219,7 @@ main a {
 }
 
 .exp-content p {
-    margin: 0;
+    margin-top: 0;
 }
 
 .exp-content-wrapper ul {
@@ -472,6 +472,7 @@ main a {
     /* CONTACT 586PX */
     .ctc-content-wrapper {
         flex-direction: column;
+        margin-bottom: 0;
     }
     
     .ctc-wrapper-left {
