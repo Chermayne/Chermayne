@@ -379,10 +379,6 @@ main a {
         border-left: 2px solid #2B2A2A;
     }
 
-    #body-heading {
-        font-size: 0.9em;
-    }
-
     /* EXPRIENCES 586PX */
     .exp-item {
         margin-top: 20px;
@@ -404,7 +400,6 @@ main a {
     .exp-subheading {
         margin-bottom: 0;
         padding: 0;
-        font-size: 0.9em;
     }
     
     .date {
@@ -419,10 +414,13 @@ main a {
     
     .exp-item-left {
         width: 100%;
+        margin-right: 0;
+        padding-right: 0;
     }
     
     .exp-item-right {
         width: 100%;
+        margin-left: 0;
     }
     
     .exp-content-img img {
@@ -430,18 +428,59 @@ main a {
     }
     
     .exp-content p {
-        margin: 0;
-        font-size: 0.9em;
-    }
-    
-    .exp-content-wrapper ul {
-        font-size: 0.9em;
-    }
-    
-    
-    .org-links {
-        margin-top: 10px;
-        font-size: 0.9em;
+        margin-top: 0;
+        margin-left: 0;
     }
 
+    .org-links {
+        margin-top: 10px;
+    }
+
+    /* EDUCATION 586PX */
+    .edu-item {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .edu-content-wrapper {
+        flex-direction: column;
+    }
+
+    .edu-heading {
+        margin-bottom: 10px;
+        margin-top: 5px;
+        font-size: 1.2em;
+    }
+
+    .edu-item-left {
+        width: 100%;
+        margin-right: 0;
+    }
+    
+    .edu-item-right {
+        width: 100%;
+    }
+
+    .edu-content p {
+        margin-left: 0;
+    }
+
+    .edu-content-wrapper ul {
+    padding-left: 20px;
+}
+
+    /* CONTACT 586PX */
+    .ctc-content-wrapper {
+        flex-direction: column;
+    }
+    
+    .ctc-wrapper-left {
+        width: 100%;
+        margin-right: 0;
+    }
+    
+    .ctc-wrapper-right {
+        width: 100%;
+        margin-left: 0;
+    }
 }
