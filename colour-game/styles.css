@@ -1,0 +1,84 @@
+body {
+    background-color: #EBF2EB;
+    margin: 0;
+    font-family: 'Nanum Gothic', sans-serif;;
+}
+
+#container {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.square {
+    width: 30%;
+    padding-bottom: 30%;
+    float: left;
+    margin: 1.66%;
+    transition: background-color 0.3 ease-in 100s;
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.square:hover {
+    transform: translateY(-.5rem);
+    box-shadow: 0 5px 1rem rgba(0, 0, 0, .2);
+}
+
+
+h1 {
+    color: #222822;
+    text-align: center;
+    background-color: #EBF2EB;
+    margin: 0;
+    padding: 20px 0 10px 0;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+#colour-display {
+    font-size: 200%;
+}
+
+#stripe {
+    background-color: #222822;
+    height: 40px;
+    text-align: center;
+}
+
+.selected {
+    background-color: #EBF2EB;
+    color: #222822;
+}
+
+button {
+    border: none;
+    outline: none;
+    background-color: #222822;
+    text-transform: uppercase;
+    color: #EBF2EB;
+    font-size: 1em;
+    height: 100%;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+}
+
+#message {
+    display: inline-block;
+    width: 30%;
+    color: #EBF2EB;
+    text-transform: uppercase;
+}
+
+button:hover {
+    color: #222822;
+    background-color: #EBF2EB
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 576px) {
+    #colour-display {
+        font-size: 150%;
+    }
+}
