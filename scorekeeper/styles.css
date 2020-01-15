@@ -155,6 +155,21 @@ input[type=number]::-webkit-outer-spin-button {
                                     supported by Chrome, Opera and Firefox */
 }
 
+#reset:active {
+    box-shadow: 0px 0px 0px 0px #15161A;
+}
+
+#reset-container:active {
+    transform: translateY(4px);
+}
+
+.counter-container:active {
+    box-shadow: 0px 0px 0px 0px #15161A;
+    transform: translateY(4px);
+}
+
+
+/* MEDIA QUERIES */
 @media (hover: hover) { 
     #p1:hover {
         background-color: #158599;
@@ -174,21 +189,6 @@ input[type=number]::-webkit-outer-spin-button {
     }
 
 }
-
-/* MEDIA QUERIES */
-    #reset:active {
-        box-shadow: 0px 0px 0px 0px #15161A;
-    }
-
-    #reset-container:active {
-        transform: translateY(4px);
-    }
-
-    .counter-container:active {
-        box-shadow: 0px 0px 0px 0px #15161A;
-        transform: translateY(4px);
-    }
-
 
 @media (max-width: 1024px) and (min-height: 1366px) {
     #container {
@@ -312,243 +312,3 @@ input[type=number]::-webkit-outer-spin-button {
     }
 }
 
-/* @media (max-width: 1024px) and (min-height: 1366px){
-    #container {
-        flex-direction: column;
-        justify-content: space-evenly;
-        max-height: 100vh;
-    }
-
-    .section {
-        margin: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .counter-container {
-        border-radius: 0;
-        width: 100%;
-        height: 150px;
-        font-size: 8em;
-        line-height: 150px;
-    }
-
-    h1 {
-        font-size: 3em;
-    }
-
-    #h1-p1 {
-        margin-bottom: 10px;
-    }
-
-    #h1-p2 {
-        margin-top: 10px;
-    }
-
-
-    #settings {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin: 0;
-        padding: 20px 0;
-        border-top: 1px solid #15161A;
-        border-bottom: 1px solid #15161A;
-    }
-
-    #display-winner {
-        font-size: 2.5em;
-        margin-bottom: 40px;
-    }
-
-    #logo {
-        font-size: 5.5em;
-        line-height: 50px;
-    }
-
-    #max-value {
-        font-size: 2.5em;
-        margin-top: 40px;
-    }
-
-    .number-input {
-        width: 250px;
-        height: 50px;
-    }
-
-    #reset-container {
-        margin: 30px auto;
-    }
-
-    #reset {
-        font-size: 1.5em;
-    }
-}
-
-
-@media (max-width: 800px){
-    #container {
-        flex-direction: column;
-        justify-content: space-evenly;
-        min-height: 100vh;
-    }
-
-    .section {
-        margin: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .counter-container {
-        border-radius: 0;
-        line-height: auto;
-        width: 100%;
-        font-size: 4em;
-    }
-
-    h1 {
-        font-size: 1.3em;
-    }
-
-    #h1-p1 {
-        margin-bottom: 10px;
-    }
-
-    #h1-p2 {
-        margin-top: 10px;
-    }
-
-    .circle-container {
-        height: auto;
-    }
-
-    #settings {
-        max-width: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin: 0;
-        padding: 20px 0;
-        border-top: 1px solid #15161A;
-        border-bottom: 1px solid #15161A;
-       
-    }
-
-    #display-winner {
-        font-size: 1em;
-        margin-bottom: 0;
-    }
-
-    #logo {
-        font-size: 2em;
-        line-height: 50px;
-    }
-
-    #max-value {
-        font-size: 1em;
-        margin-top: 0;
-    }
-
-    .number-input {
-        width: 150px;
-        height: 30px;
-    }
-
-    #reset-container {
-        margin: 10px auto;
-    }
-
-    #reset {
-        font-size: 0.8em;
-    }
-    
-    #reset-container {
-        margin: 10px auto;
-    }
-}
-
-
-@media (max-width: 600px){
-    #container {
-        flex-direction: column;
-        justify-content: space-evenly;
-        min-height: 100vh;
-    }
-
-    .section {
-        margin: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        flex-grow: 1;
-    }
-
-    .counter-container {
-        border-radius: 0;
-        width: 100%;
-        height: 70px;
-        font-size: 4em;
-        line-height: 70px;
-    }
-
-    h1 {
-        font-size: 1.3em;
-    }
-
-    #h1-p1 {
-        margin-bottom: 10px;
-    }
-
-    #h1-p2 {
-        margin-top: 10px;
-    }
-
-    #settings {
-        max-width: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin: 0;
-        padding: 20px 0;
-        border-top: 1px solid #15161A;
-        border-bottom: 1px solid #15161A;
-        flex-grow: 1;
-    }
-
-    #display-winner {
-        font-size: 1em;
-        margin-bottom: 0;
-    }
-
-    #logo {
-        font-size: 2em;
-        line-height: 50px;
-    }
-
-    #max-value {
-        font-size: 1em;
-        margin-top: 0;
-    }
-
-    .number-input {
-        width: 150px;
-        height: 30px;
-    }
-
-    #reset-container {
-        margin: 10px auto;
-    }
-
-    #reset {
-        font-size: 0.8em;
-    }
-    
-    #reset-container {
-        margin: 10px auto;
-    }
-} */
